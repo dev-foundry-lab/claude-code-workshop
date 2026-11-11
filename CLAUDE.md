@@ -47,3 +47,22 @@ Inspect the project before making technical decisions.
 
 - Never delete project files without explicit approval.
 - Avoid destructive Git commands.
+
+## Project Documentation
+
+Project knowledge is maintained in the `docs/` directory.
+
+Relevant documents:
+
+- `docs/project-overview.md`: project purpose, goals and scope.
+- `docs/architecture.md`: current architecture and technical principles.
+- `docs/decisions/`: Architecture Decision Records (ADRs).
+
+Before making architectural decisions:
+
+1. Read the relevant project documentation.
+2. Check existing ADRs for previous decisions.
+3. Distinguish documented facts from assumptions.
+4. Propose a new ADR when introducing a significant architectural decision.
+
+Do not assume that planned components are already implemented.
