@@ -58,6 +58,15 @@ Review the component across five categories:
 
 Only report issues supported by concrete evidence.
 
+When reviewing TypeScript type safety, read
+`references/typescript.md` before evaluating Type Safety
+findings. Apply its criteria to the component being reviewed.
+
+Resolve the reference path relative to this SKILL.md file.
+
+Do not load unrelated reference documents unless they
+are relevant to the review.
+
 ### 3. Classify
 
 Assign a severity level to each finding:
