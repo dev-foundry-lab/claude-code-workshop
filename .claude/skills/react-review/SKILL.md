@@ -1,4 +1,3 @@
-
 ---
 name: react-review
 description: >
@@ -15,19 +14,13 @@ description: >
 
 ## Purpose
 
-Perform a read-only code review of existing React
-components written in TypeScript.
+Perform a read-only code review of existing React components written in TypeScript.
 
-Identify concrete issues related to correctness,
-type safety, performance, accessibility, and
-maintainability.
+Identify concrete issues related to correctness, type safety, performance, accessibility, and maintainability.
 
-Explain findings in Italian and provide actionable
-recommendations with TypeScript/TSX examples
-when useful.
+Explain findings in Italian and provide actionable recommendations with TypeScript/TSX examples when useful.
 
-Do not modify source files, install dependencies,
-or execute commands that change project state.
+Do not modify source files, install dependencies, or execute commands that change project state.
 
 ## Workflow
 
@@ -45,27 +38,27 @@ Follow these steps in order when reviewing a component.
 
 Review the component across five categories:
 
-- Correctness: bugs, state management, hooks,
-  effects, and error handling.
-- Type Safety: TypeScript types, unsafe casts,
-  `any`, and component props.
-- Performance: unnecessary renders, expensive
-  computations, and list rendering.
-- Accessibility: semantic HTML, keyboard support,
-  focus management, and ARIA.
-- Maintainability: readability, duplication,
-  complexity, and separation of concerns.
+- Correctness: bugs, state management, hooks, effects, and error handling.
+- Type Safety: TypeScript types, unsafe casts, `any`, and component props.
+- Performance: unnecessary renders, expensive computations, and list rendering.
+- Accessibility: semantic HTML, keyboard support, focus management, and ARIA.
+- Maintainability: readability, duplication, complexity, and separation of concerns.
 
 Only report issues supported by concrete evidence.
 
-When reviewing TypeScript type safety, read
-`references/typescript.md` before evaluating Type Safety
-findings. Apply its criteria to the component being reviewed.
+When reviewing TypeScript type safety, read `references/typescript.md` before evaluating Type Safety findings. Apply its criteria to the component being reviewed.
+
+When reviewing React correctness, state management, hooks, or performance, read `references/react-patterns.md` before evaluating the relevant findings.
+
+Apply its criteria to the component being reviewed.
+
+When reviewing accessibility, read `references/accessibility.md` before evaluating Accessibility findings.
+
+Apply its criteria to the component being reviewed.
 
 Resolve the reference path relative to this SKILL.md file.
 
-Do not load unrelated reference documents unless they
-are relevant to the review.
+Do not load unrelated reference documents unless they are relevant to the review.
 
 ### 3. Classify
 
@@ -114,8 +107,7 @@ Write all explanations in Italian.
 For each finding, provide:
 
 - Severity: CRITICAL, HIGH, MEDIUM, or LOW.
-- Category: Correctness, Type Safety,
-  Performance, Accessibility, or Maintainability.
+- Category: Correctness, Type Safety, Performance, Accessibility, or Maintainability.
 - Location: file path and line number.
 - Evidence: relevant code or observed behavior.
 - Explanation: why the issue matters.
@@ -140,16 +132,13 @@ For findings that benefit from code examples:
 - Review each snippet for syntax errors before including it in the report.
 - Do not claim that a snippet was compiled or tested unless that verification actually occurred.
 
-
 ### Positive Observations
 
-Highlight relevant good practices already present
-in the component.
+Highlight relevant good practices already present in the component.
 
 ### Recommended Priorities
 
-List recommended improvements in priority order,
-considering severity, impact, and implementation effort.
+List recommended improvements in priority order, considering severity, impact, and implementation effort.
 
 ### Verification
 
@@ -160,5 +149,4 @@ State explicitly:
 - Checks not performed.
 - Assumptions and remaining uncertainties.
 
-Never claim that tests or runtime checks passed
-unless they were actually executed.
+Never claim that tests or runtime checks passed unless they were actually executed.
