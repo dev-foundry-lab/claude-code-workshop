@@ -71,6 +71,16 @@ Assign a severity level to each finding:
 
 Consider impact and likelihood when assigning severity.
 
+Distinguish confirmed findings from optional improvements.
+
+- A confirmed finding describes a concrete defect or quality issue supported by evidence in the reviewed code.
+- Assign CRITICAL, HIGH, MEDIUM, or LOW severity only to confirmed findings.
+- An optional improvement is a suggestion that may enhance the component but is not supported as a current defect.
+- Do not classify optional improvements as confirmed findings.
+- Do not downgrade genuine LOW-severity defects to optional improvements merely because their impact is limited.
+- Keep optional improvements separate from confirmed findings.
+- Respect the requested review scope for both categories.
+
 ### 4. Recommend
 
 For each finding:
@@ -116,6 +126,16 @@ For each finding, provide:
 Order findings from highest to lowest severity.
 
 Do not invent findings to fill categories.
+
+### Optional Improvements
+
+List optional improvements separately from confirmed findings.
+
+- Explain the potential benefit of each suggestion.
+- Do not assign defect severity to optional improvements.
+- Do not include optional improvements in confirmed finding counts.
+- Do not present optional improvements as required fixes.
+- Omit this section when there are no relevant suggestions.
 
 ### Suggested Fixes
 
